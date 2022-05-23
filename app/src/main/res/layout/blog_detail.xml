@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BlogDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toptitleitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            android:id="@+id/backBlogDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="30dp">
+
+            <ImageView
+                android:id="@+id/blogImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtTagBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Tag: "
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/blogImage1"
+                app:layout_constraintTop_toBottomOf="@id/blogImage1" />
+
+            <TextView
+                android:id="@+id/txtTagContentBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Headphone"
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintStart_toEndOf="@+id/txtTagBlogDe"
+                app:layout_constraintTop_toTopOf="@id/txtTagBlogDe" />
+
+            <TextView
+                android:id="@+id/txtDateBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date: "
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTagBlogDe"
+                app:layout_constraintTop_toBottomOf="@+id/txtTagBlogDe" />
+
+            <TextView
+                android:id="@+id/txtDateContentBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-12-1222 10:24:21"
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintStart_toEndOf="@+id/txtDateBlogDe"
+                app:layout_constraintTop_toTopOf="@+id/txtDateBlogDe" />
+
+            <TextView
+                android:id="@+id/txtAuthorBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By: "
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toStartOf="@+id/txtAuthorContentBlogDe"
+                app:layout_constraintTop_toTopOf="@id/txtTagContentBlogDe" />
+
+            <TextView
+                android:id="@+id/txtAuthorContentBlogDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chin"
+                android:textColor="@color/md_grey_600"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toEndOf="@+id/blogImage1"
+                app:layout_constraintTop_toTopOf="@id/txtAuthorBlogDe" />
+
+            <TextView
+                android:id="@+id/txtTitleBlogDe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Reel In The Best Wireless Headphones for 2021"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="@+id/txtDateBlogDe"
+                app:layout_constraintTop_toBottomOf="@+id/txtDateBlogDe" />
+
+            <TextView
+                android:id="@+id/txtContentBlogDe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="With HBO streaming, you can use up to three simultaneous streams with packages starting from $15 monthly.Top-tier content Westworld and Game of Thrones means you can binge all your favorite shows on demand."
+                android:textColor="@color/md_blue_grey_600"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/txtTitleBlogDe"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleBlogDe" />
+
+            <ImageView
+                android:id="@+id/blogImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:src="@drawable/b2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContentBlogDe1" />
+
+            <TextView
+                android:id="@+id/txtContentBlogDe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Starting at just $9 a month and offering you up to 4 simultaneous streams, Netflix is the OG of the streaming vertical and needs no introduction. Indeed, with Netflix and Chill, the brand has even entered the vernacular."
+                android:textColor="@color/md_blue_grey_600"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/blogImage2"
+                app:layout_constraintTop_toBottomOf="@+id/blogImage2" />
+
+            <TextView
+                android:id="@+id/txtContentBlogDe3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Recent events with COVID-19 are sure to see us all spending more time inside our homes  road testing the best streaming services for lockdown. The other and more immediate benefit is having some precious downtime on your hands."
+                android:textColor="@color/md_blue_grey_600"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="@+id/txtContentBlogDe2"
+                app:layout_constraintTop_toBottomOf="@+id/txtContentBlogDe2" />
+
+            <ImageView
+                android:id="@+id/blogImage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:src="@drawable/b1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtContentBlogDe3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

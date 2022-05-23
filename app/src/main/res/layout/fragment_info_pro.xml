@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.info_pro_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/white">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="Name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="abc"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/top_line">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="Quantity"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="10"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:background="@drawable/top_line">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="Status"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="New arrival"
+                    android:textSize="15sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="     - Easy connection, super fast: 30s is done \n
+    - Easy connection, super fast: 30s is done \n
+    - Easy connection, super fast: 30s is done \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n
+    - Excellent storage capacity: 10 days \n"/>
+    </LinearLayout>
+
+</ScrollView>

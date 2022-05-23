@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="2dp"
+    android:background="@color/color_proDe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/blogImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/b4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTagBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tag: "
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/blogImage"
+            app:layout_constraintTop_toBottomOf="@id/blogImage" />
+
+        <TextView
+            android:id="@+id/txtTagContentBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headphone"
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/txtTagBlog"
+            app:layout_constraintTop_toTopOf="@id/txtTagBlog" />
+
+        <TextView
+            android:id="@+id/txtDateBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Date: "
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/txtTagBlog"
+            app:layout_constraintTop_toBottomOf="@+id/txtTagBlog" />
+
+        <TextView
+            android:id="@+id/txtDateContentBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12-12-1222 10:24:21"
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/txtDateBlog"
+            app:layout_constraintTop_toTopOf="@+id/txtDateBlog" />
+
+        <TextView
+            android:id="@+id/txtAuthorBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By: "
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtAuthorContentBlog"
+            app:layout_constraintTop_toTopOf="@id/txtTagContentBlog" />
+
+        <TextView
+            android:id="@+id/txtAuthorContentBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chin"
+            android:textColor="@color/md_grey_600"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="@+id/blogImage"
+            app:layout_constraintTop_toTopOf="@id/txtAuthorBlog" />
+
+        <TextView
+            android:id="@+id/txtTitleBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans_bold"
+            android:lines="2"
+            android:text="Reel In The Best Wireless Headphones for 2021"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="@+id/txtDateBlog"
+            app:layout_constraintTop_toBottomOf="@+id/txtDateBlog" />
+
+        <TextView
+            android:id="@+id/txtContentBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="In the final few years of the last decade, digital assistants penetrated our homes in the"
+            android:textColor="@color/md_blue_grey_600"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/txtTitleBlog"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleBlog" />
+        <Button
+            android:id="@+id/btnReadMoreBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read more"
+            android:fontFamily="@font/open_sans_bold"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_border"
+            app:layout_constraintTop_toBottomOf="@+id/txtContentBlog"
+            app:layout_constraintStart_toStartOf="@+id/txtContentBlog"
+            app:layout_constraintEnd_toEndOf="@+id/txtContentBlog"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.comment_pro_Fragment"
+    android:id="@+id/fragmentCmtlayout">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cmtRecycler"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/fragment_comment_pro_item"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCommment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:src="@drawable/ic_feedback"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/color_proDe"/>
+    <include layout="@layout/fragment_comment_fab"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
