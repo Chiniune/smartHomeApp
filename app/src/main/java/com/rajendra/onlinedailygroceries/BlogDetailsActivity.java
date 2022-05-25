@@ -31,8 +31,8 @@ public class BlogDetailsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.blog_detail);
+        // get blog
         final Blog blog = (Blog) getIntent().getSerializableExtra("blogDetail");
-//        Toast.makeText(this, blog.toString(), Toast.LENGTH_SHORT).show();
 
         tag = findViewById(R.id.txtTagContentBlogDe);
         author = findViewById(R.id.txtAuthorContentBlogDe);
@@ -45,13 +45,13 @@ public class BlogDetailsActivity extends AppCompatActivity {
         img2 = findViewById(R.id.blogImage2);
         img3 = findViewById(R.id.blogImage3);
 
-////        final List<BlogDetail> blogDetail = new ArrayList<>();
+////    dump data blog detail
         Call<BlogDetail> detail = ApiClient.getNewsService().getBlogDetail(blog.getIdblog());
         detail.enqueue(new Callback<BlogDetail>() {
             @Override
             public void onResponse(Call<BlogDetail> call, Response<BlogDetail> response) {
 //                Toast.makeText(BlogDetailsActivity.this, response.body().toString(), Toast.LENGTH_SHORT).show();
-//                blogDetail.addAll(response.body());
+
                 Glide.with(BlogDetailsActivity.this).load("http://"+ Constants.Host +":8080/User/assets/images/blog/"+
                         response.body().getImage()).into(img1);
                 tag.setText(response.body().getTag());

@@ -13,12 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.rajendra.onlinedailygroceries.adapter.All_Status_All_CategoryAdapter;
 import com.rajendra.onlinedailygroceries.adapter.All_Status_All_MenuAdapter;
 import com.rajendra.onlinedailygroceries.adapter.All_Status_All_ProductAdapter;
-import com.rajendra.onlinedailygroceries.model.All_Status_Item_Product;
 import com.rajendra.onlinedailygroceries.model.Product;
-import com.rajendra.onlinedailygroceries.model.Products;
 import com.rajendra.onlinedailygroceries.network.ApiClient;
 
-import static com.rajendra.onlinedailygroceries.R.drawable.*;
 import java.util.ArrayList;
 import java.util.List;
 

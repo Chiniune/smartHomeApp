@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ProductDetail"
+            android:name=".ProductDetailActivity"
             android:exported="true" />
         <activity android:name=".AllCategory" />
         <activity android:name=".BlogPageActivity" />

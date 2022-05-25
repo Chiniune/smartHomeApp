@@ -2,7 +2,6 @@ package com.rajendra.onlinedailygroceries;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -17,6 +16,7 @@ import com.rajendra.onlinedailygroceries.fragment.comment_pro_Fragment;
 import com.rajendra.onlinedailygroceries.fragment.info_pro_Fragment;
 import com.rajendra.onlinedailygroceries.fragment.related_pro_Fragment;
 import com.rajendra.onlinedailygroceries.model.Product;
+import com.rajendra.onlinedailygroceries.model.ProductDetail;
 import com.rajendra.onlinedailygroceries.model.SliderProductPhoto;
 
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ import java.util.List;
 
 import me.relex.circleindicator.CircleIndicator;
 
-public class ProductDetail extends AppCompatActivity {
+public class ProductDetailActivity extends AppCompatActivity {
 
     //slider product detail
     ViewPager viewPager;
@@ -37,11 +37,13 @@ public class ProductDetail extends AppCompatActivity {
     ViewPager viewPager_tablayout;
 
     TextView pro_Name,textView7,textView12;
+
+    static  Product pro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
-        Product pro = (Product) getIntent().getSerializableExtra("product");
+        pro = (Product) getIntent().getSerializableExtra("product");
 
         //Slider Photo Product detail
         viewPager = findViewById(R.id.viewPager_slider);
@@ -51,6 +53,7 @@ public class ProductDetail extends AppCompatActivity {
         indicator.setViewPager(viewPager);
         imgadpter.registerDataSetObserver(indicator.getDataSetObserver());
 
+        // rating bar
         ratingBar = findViewById(R.id.ratingBar_pro);
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
@@ -78,7 +81,7 @@ public class ProductDetail extends AppCompatActivity {
                         message = "Awesome! You are the best :3";
                         break;
                 }
-                Toast.makeText(ProductDetail.this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ProductDetailActivity.this, message, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -86,7 +89,7 @@ public class ProductDetail extends AppCompatActivity {
         tabLayout = findViewById(R.id.tablayout_pro);
         viewPager_tablayout = findViewById(R.id.viewTabLayout);
         FragmentProAdapter fragmentProAdapter = new FragmentProAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        fragmentProAdapter.addFragment(new info_pro_Fragment(), "info");
+        fragmentProAdapter.addFragment(new info_pro_Fragment(this), "info");
         fragmentProAdapter.addFragment(new comment_pro_Fragment(), "comment");
         fragmentProAdapter.addFragment(new related_pro_Fragment(), "related");
         viewPager_tablayout.setAdapter(fragmentProAdapter);
@@ -113,5 +116,10 @@ public class ProductDetail extends AppCompatActivity {
         list.add(new SliderProductPhoto(pro.getImage()));
         list.add(new SliderProductPhoto(pro.getImage()));
         return list;
+    }
+
+//    get product -> info fragment
+    public static Product getProductDetail() {
+        return pro;
     }
 }

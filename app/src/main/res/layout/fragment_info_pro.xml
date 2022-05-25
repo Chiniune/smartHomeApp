@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".fragment.info_pro_Fragment">
@@ -28,6 +29,7 @@
                     android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/txtNameProductDe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
@@ -45,10 +47,53 @@
                     android:layout_weight="2"
                     android:gravity="center_vertical"
                     android:padding="10sp"
+                    android:text="Price"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtPriceProductDe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="10"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow android:background="@drawable/top_line">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
                     android:text="Quantity"
                     android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/txtQuantityProductDe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="10"
+                    android:textSize="15sp" />
+            </TableRow>
+            <TableRow android:background="@drawable/top_line">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="Tag"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txtTagProductDe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
@@ -71,6 +116,7 @@
 
 
                 <TextView
+                    android:id="@+id/txtStatusProductDe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
@@ -89,21 +135,28 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_margin="10dp"/>
+
         <TextView
+            android:id="@+id/txtProductDeDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="     - Easy connection, super fast: 30s is done \n
-    - Easy connection, super fast: 30s is done \n
-    - Easy connection, super fast: 30s is done \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n
-    - Excellent storage capacity: 10 days \n"/>
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Easy connection, super fast"/>
+        <TextView
+            android:id="@+id/txtProductDeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Easy connection, super fast"/>
+        <TextView
+            android:id="@+id/txtProductDeSpecification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Easy connection, super fast"/>
     </LinearLayout>
 
 </ScrollView>

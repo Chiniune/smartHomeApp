@@ -3,6 +3,7 @@ package com.rajendra.onlinedailygroceries.network;
 import com.rajendra.onlinedailygroceries.model.Blog;
 import com.rajendra.onlinedailygroceries.model.BlogDetail;
 import com.rajendra.onlinedailygroceries.model.Product;
+import com.rajendra.onlinedailygroceries.model.ProductDetail;
 import com.rajendra.onlinedailygroceries.model.SignupResponse;
 import com.rajendra.onlinedailygroceries.model.User;
 
@@ -27,6 +28,9 @@ public interface NewsService {
     Call<List<Product>> getAllProduct(@Query("status") String status);
     @GET("api/getapiProductTag")
     Call<List<Product>> getAllProductTag(@Query("tag") String tag);
+
+    @GET("api/getapiProductDetail")
+    Call<ProductDetail> getProductDetail(@Query("id") int id);
 
     @GET("api/posts")
     Call<List<User>> getAllNews();

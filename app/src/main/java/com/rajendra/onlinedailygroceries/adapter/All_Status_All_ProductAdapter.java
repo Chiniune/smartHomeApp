@@ -13,10 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.rajendra.onlinedailygroceries.Constants;
-import com.rajendra.onlinedailygroceries.ProductDetail;
+import com.rajendra.onlinedailygroceries.ProductDetailActivity;
 import com.rajendra.onlinedailygroceries.R;
 import com.rajendra.onlinedailygroceries.model.Product;
-import com.rajendra.onlinedailygroceries.model.Products;
 
 import java.io.Serializable;
 import java.util.List;
@@ -56,7 +55,7 @@ public class All_Status_All_ProductAdapter extends RecyclerView.Adapter<All_Stat
             @Override
             public void onClick(View view) {
 
-                Intent i =new Intent(context, ProductDetail.class);
+                Intent i =new Intent(context, ProductDetailActivity.class);
                 i.putExtra("product", (Serializable) productsList.get(position));
                 context.startActivity(i);
 

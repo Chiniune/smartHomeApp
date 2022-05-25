@@ -3,10 +3,10 @@ package com.rajendra.onlinedailygroceries.model;
 
 public class Comment {
 
-    private String username;
-    private int imageUrl;
-    private float rating;
-    private String date;
+    String username;
+    int imageUrl;
+    float rating;
+    String date;
     private String content;
 
     public Comment(String username, int imageUrl, float rating, String date, String content) {

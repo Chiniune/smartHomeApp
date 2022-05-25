@@ -9,6 +9,8 @@
     android:gravity="center"
     android:theme="@android:style/Theme.Translucent">
 
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

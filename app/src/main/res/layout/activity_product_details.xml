@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginBottom="0dp"
     android:orientation="vertical"
-    tools:context=".ProductDetail">
+    tools:context=".ProductDetailActivity">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

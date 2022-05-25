@@ -56,18 +56,24 @@
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/drawable/bg_bottom_border.xml" value="0.1" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/drawable/ic_back.xml" value="0.147" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/drawable/ic_send.xml" value="0.13" />
-        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/activity_product_details.xml" value="0.25" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/activity_product_details.xml" value="0.2" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/all_category_row_items.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/all_pro_item.xml" value="0.33" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/all_status_product_row_item.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/blog_activity.xml" value="0.16" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/blog_detail.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/blog_item.xml" value="0.1546875" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/category_row_items.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_comment_fab.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_comment_pro.xml" value="0.18" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_comment_pro_item.xml" value="0.5" />
-        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_info_pro.xml" value="0.25" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_info_pro.xml" value="0.1" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/fragment_related_pro.xml" value="0.27887323943661974" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/recently_viewed_items.xml" value="0.25" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/slider_item.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/slider_product_item.xml" value="0.1546875" />
+        <entry key="..\:/Users/Vothi/AndroidStudioProjects/Aiu/AppSmartKa/app/src/main/res/layout/top_bar.xml" value="0.1546875" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/OnlineDailyGroceries-master/app/src/main/res/drawable/buy_now_bg.xml" value="0.1225" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/OnlineDailyGroceries-master/app/src/main/res/drawable/ic_account.xml" value="0.105" />
         <entry key="..\:/Users/Vothi/AndroidStudioProjects/OnlineDailyGroceries-master/app/src/main/res/drawable/ic_cart.xml" value="0.1225" />

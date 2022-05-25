@@ -27,6 +27,7 @@ import com.rajendra.onlinedailygroceries.animation.addToCart;
 import com.rajendra.onlinedailygroceries.model.Blog;
 import com.rajendra.onlinedailygroceries.model.DiscountedProducts;
 import com.rajendra.onlinedailygroceries.model.Product;
+import com.rajendra.onlinedailygroceries.model.ProductDetail;
 import com.rajendra.onlinedailygroceries.model.User;
 import com.rajendra.onlinedailygroceries.network.ApiClient;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         User ssUser = (User) getIntent().getSerializableExtra("SsUser");
+
         //Toast.makeText(MainActivity.this, ssUser.toString(), Toast.LENGTH_SHORT).show();
 
         discountRecyclerView = findViewById(R.id.discountedRecycler);
@@ -257,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
 
 
 
